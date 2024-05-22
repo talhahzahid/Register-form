@@ -21,19 +21,38 @@ let ageregex = /^(1[9]|[2-9][0-9])$/;
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    {
-        console.log(userregex.test(username.value))
-        console.log(username.value)
-        console.log(emailregex.test(email.value))
-        console.log(email.value)
-        console.log(passregex.test(password.value))
-        console.log(password.value)
-        console.log(cnicregex.test(cnic.value))
-        console.log(cnic.value)
-        console.log(ageregex.test(age.value))
-        console.log(age.value)
-
-    }
+    
+        // console.log(userregex.test(username.value))
+        // console.log(username.value)
+        if(userregex.test(username.value)){
+            console.log(username.value);
+        }
+        username.value = "";
+        // console.log(emailregex.test(email.value))
+        // console.log(email.value)
+        if(emailregex.test(email.value)){
+            console.log(email.value);
+        }
+        email.value = "";
+        // console.log(passregex.test(password.value))
+        // console.log(password.value)
+        if(passregex.test(password.value)){
+            console.log(password.value);
+        }
+        password.value = "";
+        // console.log(cnicregex.test(cnic.value))
+        // console.log(cnic.value)
+        if(cnicregex.test(cnic.value)){
+            console.log(cnic.value);
+        }
+        cnic.value = "";
+        // console.log(ageregex.test(age.value))
+        // console.log(age.value)
+        if(ageregex.test(age.value)){
+            console.log(age.value);
+        }
+        age.value = "";
+    
 })
 
 
