@@ -26,30 +26,40 @@ form.addEventListener('submit', (event) => {
         // console.log(username.value)
         if(userregex.test(username.value)){
             console.log(username.value);
+        }else{
+            alert('username incoorect')
         }
         username.value = "";
         // console.log(emailregex.test(email.value))
         // console.log(email.value)
         if(emailregex.test(email.value)){
             console.log(email.value);
+        }else{
+            alert('Incorrect email Please check again')
         }
         email.value = "";
         // console.log(passregex.test(password.value))
         // console.log(password.value)
         if(passregex.test(password.value)){
             console.log(password.value);
+        }else{
+            alert('password does not match')
         }
         password.value = "";
         // console.log(cnicregex.test(cnic.value))
         // console.log(cnic.value)
         if(cnicregex.test(cnic.value)){
             console.log(cnic.value);
+        }else{
+            alert('Incorrect Cnic ')
         }
         cnic.value = "";
         // console.log(ageregex.test(age.value))
         // console.log(age.value)
         if(ageregex.test(age.value)){
             console.log(age.value);
+        }else{
+            alert('incorrect age')
         }
         age.value = "";
     
